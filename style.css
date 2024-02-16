@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: black solid 1px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    padding: 10px;
+    border: black solid 1px;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-button {
+    margin-right: 15px;
+    padding: 10px;
+    border: black solid 1px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.container-1 {
+    padding-top: 220px;
+    padding-bottom: 227px;
+    height: 100%;
+    width: 100%;
+    border: black solid 1px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 200px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.line-1 {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+    border: black solid 1px;
+}
+
+.line-2 {
+    margin: 10px;
+    width: 400px;
+    height: 100px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+    border: black solid 1px;
+}
+
+.line-3 {
+    margin: 10px;
+    width: 400px;
+    height: 100px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+    border: black solid 1px;
+}
+
+.contact-btn {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+    border: black solid 1px;
+}
+
+.container-2 {
+    padding-top: 130px;
+    padding-bottom: 170px;
+    height: 100%;
+    width: 100%;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;  
+}
+
+.about {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.about1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about2 {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 100px;
+    gap: 100px;
+}
+
+.about-me {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    border: black solid 1px;
+    margin-bottom: 10px;;
+}
+
+.profile {
+    width: 450px;
+    height: 500px;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 200px;
+    border: black solid 1px;
+}
+
+.about-me_line1 {
+    border: black solid 1px;
+    height: 40px;
+    width: 450px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.about-me_paragraph {
+    border: black solid 1px;
+    height: 200px;
+    width: 450px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.name,
+.phone,
+.country,
+.email,
+.education {
+    border: black solid 1px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.p-info1 {
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.p-info2 {
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.p-info3 {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 120px;
+}
+
+.social-media {
+
+    height: 40px;
+    width: 450px;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socmed-git,
+.socmed-fb,
+.socmed-x,
+.socmed-ig {
+    border: black solid 1px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.container-3 {
+    padding-top: 100px;
+    padding-bottom: 130px;
+    height: 100%;
+    width: 100%;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;  
+}
+
+.skills {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.skills-label {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    border: black solid 1px;
+}
+
+.skills-part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-part2 {
+    padding-left: 100px;
+    display: flex;
+    gap:100px;
+    margin-top: 100px;
+}
+
+.skills-part3 {
+    padding-left: 300px;
+}
+
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5,
+.skill6,
+.skill7,
+.skill8 {
+    border: black solid 1px;
+    height: 100px;
+    width: 450px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 7px;
+    margin-top: 10px;
+}
+
+
+.skill-label {
+    border: black solid 1px;
+    padding: 5px;
+    width: 100px; 
+}
+
+
+.skill-percent {
+    border: black solid 1px;
+    padding: 2px;
+    width: 80px;
+    margin-top: 2px;
+    margin-left:345px;
+}
+
+.skill1-bar,
+.skill2-bar,
+.skill3-bar,
+.skill4-bar,
+.skill5-bar,
+.skill6-bar,
+.skill7-bar,
+.skill8-bar {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.skill1-bar1,
+.skill2-bar1,
+.skill3-bar1,
+.skill4-bar1,
+.skill5-bar1,
+.skill6-bar1,
+.skill7-bar1,
+.skill8-bar1 {
+    width: 250px;
+    height: 20px;
+    border: black solid 1px;
+    text-align: center;
+}
+
+.skill1-bar2,
+.skill2-bar2,
+.skill3-bar2,
+.skill4-bar2,
+.skill5-bar2,
+.skill6-bar2,
+.skill7-bar2,
+.skill8-bar2 {
+    width: 175px;
+    height: 20px;
+    border: black solid 1px;
+    text-align: center;
+}
+
+
+.skills-line1 {
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    border: black solid 1px;
+    margin-top: 100px;
+}
+
+.container-4 {
+    padding-top: 100px;
+    padding-bottom: 190px;
+    height: 100%;
+    width: 100%;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;  
+}
+
+.portfolio {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.portfolio-label {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    border: black solid 1px;
+}
+
+.portfolio-part2 {
+    margin-top: 100px;
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px; 
+}
+
+.portfolio-btn {
+    border: black solid 1px;
+    padding: 10px;
+}
+
+.portfolio-part3 {
+    margin-top: 30px;
+}
+
+.portfolio-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; 
+}
+
+.portfolio-img {
+    border: black solid 1px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    padding: 180px 0;
+}
+
+.container-5 {
+    padding-top: 100px;
+    padding-bottom: 190px;
+    height: 100%;
+    width: 100%;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;  
+}
+
+.services {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.service-logo {
+    border: black solid 1px;
+    height: 50px;
+    width: 80px;
+    margin-left: 85px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.service-label {
+    border: black solid 1px;
+    height: 30px;
+    width: 100px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.service-par {
+    border: black solid 1px;
+    height: 120px;
+    width: 230px;
+    margin: 0 10px;
+    text-align: center;
+    padding: 40px;
+}
+
+.services-part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services-label {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    border: black solid 1px;
+}
+
+.services-1st-column {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.services-2nd-column {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.services-part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service1,
+.service2,
+.service3,
+.service4,
+.service5,
+.service6,
+.service7,
+.service8 {
+    border: black solid 1px;
+    width: 250px;
+    height: 250px;
+}
+
+.container-6 {
+    height: 100%;
+    width: 100%;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    padding-top: 50px; 
+    padding-bottom: 50px ;
+}
+
+.contact-me-label {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 15px;
+    border: black solid 1px;
+}
+
+.contact-me-part1 {
+    display: flex;
+    justify-content: center;
+}
+.contact-me-part2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-me-part3 {
+    display: flex;
+    justify-content: center ;
+    margin-top: 20px;
+}
+
+.call,
+.email-us,
+.visit {
+    width: 300px;
+    height: 70px;
+    border: black solid 1px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.call2,
+.email-us2,
+.visit2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-logo {
+    width: 50px;
+    height: 50px;
+    border: black solid 1px;
+}
+
+.contact-label,
+.contact-info {
+    width: 220px;
+    height: 50px;
+    border: black solid 1px;
+    
+}
+
+.send-message-btn {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border: black solid 1px; 
+}
+
