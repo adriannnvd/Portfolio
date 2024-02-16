@@ -17,16 +17,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: black solid 1px;
+    border: white solid 1px;
     width: 100%;
     position: fixed;
-    background-color: white;
+    background-color: #212121;
 }
 
 .logo {
     font-size: 1.5rem;
     padding: 10px;
-    border: black solid 1px;
+    border: white solid 1px;
+    color: #FF4545;
 }
 
 .nav-buttons {
@@ -36,7 +37,8 @@
 .nav-button {
     margin-right: 15px;
     padding: 10px;
-    border: black solid 1px;
+    border: white solid 1px;
+    color: white;
 }
 
 section {
@@ -51,7 +53,8 @@ section {
     padding-bottom: 227px;
     height: 100%;
     width: 100%;
-    border: black solid 1px;
+    border: white solid 1px;
+    background-color: #212121;
 }
 
 .content {
@@ -70,7 +73,8 @@ section {
     text-align: left;
     padding-left: 30px;
     padding-top: 15px;
-    border: black solid 1px;
+    border: white solid 1px;
+    color: #666362;
 }
 
 .line-2 {
@@ -80,7 +84,8 @@ section {
     text-align: left;
     padding-left: 30px;
     padding-top: 15px;
-    border: black solid 1px;
+    border: white solid 1px;
+    color: white;
 }
 
 .line-3 {
@@ -90,7 +95,8 @@ section {
     text-align: left;
     padding-left: 30px;
     padding-top: 15px;
-    border: black solid 1px;
+    border: white solid 1px;
+    color: white;
 }
 
 .contact-btn {
@@ -100,7 +106,9 @@ section {
     text-align: left;
     padding-left: 30px;
     padding-top: 15px;
-    border: black solid 1px;
+    border: #FF4545 solid 1px;
+    background-color: #FF4545;
+    color: white;
 }
 
 .container-2 {
@@ -108,10 +116,11 @@ section {
     padding-bottom: 170px;
     height: 100%;
     width: 100%;
-    border: black solid 1px;
+    border: white solid 1px;
     display: flex;
     flex-direction: column;
-    align-items:center;  
+    align-items:center; 
+    background-color: #1E1C1C; 
 }
 
 .about {
@@ -138,10 +147,11 @@ section {
     width: 200px;
     height: 50px;
     text-align: center;
-    padding-left: 20px;
-    padding-top: 15px;
-    border: black solid 1px;
-    margin-bottom: 10px;;
+    padding-top: 5px;
+    border: white solid 1px;
+    margin-bottom: 10px;
+    color: #FF4545;
+    font-size: 2rem;
 }
 
 .profile {
@@ -150,24 +160,27 @@ section {
     text-align: center;
     padding-left: 30px;
     padding-top: 200px;
-    border: black solid 1px;
+    border: white solid 1px;
+    color: white;
 }
 
 .about-me_line1 {
-    border: black solid 1px;
+    border: white solid 1px;
     height: 40px;
     width: 450px;
     text-align: center;
     padding-top: 7px;
+    color: white;
 }
 
 .about-me_paragraph {
-    border: black solid 1px;
+    border: white solid 1px;
     height: 200px;
     width: 450px;
     margin-top: 20px;
     text-align: center;
     padding-top: 90px;
+    color: white;
 }
 
 .name,
@@ -175,11 +188,12 @@ section {
 .country,
 .email,
 .education {
-    border: black solid 1px;
+    border: white solid 1px;
     height: 40px;
     width: 200px;
     text-align: center;
     padding-top: 7px;
+    color: white;
 }
 
 .p-info1 {
@@ -211,16 +225,18 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    color: white;
 }
 
 .socmed-git,
 .socmed-fb,
 .socmed-x,
 .socmed-ig {
-    border: black solid 1px;
+    border: white solid 1px;
     padding: 10px;
     width: 50px;
     height: 50px;
+    color: white;
 }
 
 .container-3 {
