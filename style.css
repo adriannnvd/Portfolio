@@ -481,7 +481,6 @@ h1 .about-me {
 .container-4 {
     height: 100vh;
     width: 100%;
-    border: white solid 1px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -546,18 +545,20 @@ h1 .about-me {
 }
 
 .projects-img {
-    border: white solid 1px;
     height: 400px;
     width: 300px;
     text-align: center;
-    padding: 180px 0;
-    color: white;
+    object-fit: cover;
+}
+
+.projects-img img {
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px #FF4545;
 }
 
 .container-5 {
     height: 100vh;
     width: 100%;
-    border: white solid 1px;
     display: flex;
     flex-direction: column;
     align-items:center;  
@@ -737,8 +738,17 @@ h1 .about-me {
 .contact-info {
     width: 220px;
     height: 50px;
-    color:  white;
-    
+    color:  white;   
+}
+
+.contact-info a {
+    color: #FF4545;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+
+    text-decoration: underline;
 }
 .contact-label{
     font-weight: bold;
