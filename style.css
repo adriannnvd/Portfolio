@@ -2,7 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
 }
+
+h1 {
+    font-size: 40px;
+    color: bisque;
+}
+h1 span {
+    font-size: 100px;
+    color:aliceblue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
 
 
 .container {
@@ -17,7 +33,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: white solid 1px;
     width: 100%;
     position: fixed;
     background-color: #1E1C1C;
@@ -34,14 +49,22 @@
 .nav-buttons {
     display: flex;
     overflow: auto;
+    
 }
 
 .nav-button {
     margin-right: 15px;
     padding: 10px;
-    border: white solid 1px;
     color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+.active, .nav-button:hover {
+    color:#FF4545;
+}
+
+
 
 section {
     display: flex;
@@ -72,7 +95,6 @@ section {
     width: 200px;
     height: 50px;
     text-align: left;
-    border: white solid 1px;
     color: #666362;
     font-size: 2rem;
     padding-left: 10px;
@@ -83,7 +105,6 @@ section {
     width: 400px;
     height: 100px;
     text-align: left;
-    border: white solid 1px;
     color: white;
     font-size: 4rem;
     padding-left: 10px;
@@ -94,7 +115,6 @@ section {
     width: 400px;
     height: 100px;
     text-align: left;
-    border: white solid 1px;
     color: white;
     font-size: 4rem;
     padding-left: 10px;
@@ -104,13 +124,17 @@ section {
     margin: 10px;
     width: 200px;
     height: 50px;
-    text-align: left;
-    padding-left: 30px;
-    padding-top: 15px;
+    padding-top: 10px;
+    text-align: center;
     border: #FF4545 solid 1px;
     background-color: #FF4545;
     color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
 }
+
 
 .container-2 {
     height: 100vh;
@@ -151,7 +175,6 @@ section {
     height: 50px;
     text-align: center;
     padding-top: 5px;
-    border: white solid 1px;
     margin-bottom: 10px;
     color: #FF4545;
     font-size: 2rem;
