@@ -20,18 +20,20 @@
     border: white solid 1px;
     width: 100%;
     position: fixed;
-    background-color: #212121;
+    background-color: #1E1C1C;
+    overflow: auto;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
     padding: 10px;
-    border: white solid 1px;
     color: #FF4545;
 }
 
 .nav-buttons {
     display: flex;
+    overflow: auto;
 }
 
 .nav-button {
@@ -49,12 +51,10 @@ section {
 }
 
 .container-1 {
-    padding-top: 220px;
-    padding-bottom: 227px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     border: white solid 1px;
-    background-color: #212121;
+    background-color: #303830;
 }
 
 .content {
@@ -62,8 +62,9 @@ section {
     flex-direction: column;
     align-items: left;
     padding-left: 200px;
-    padding-top: auto;
-    padding-bottom: auto;
+    height: 100vh;
+    justify-content: center;
+
 }
 
 .line-1 {
@@ -71,10 +72,10 @@ section {
     width: 200px;
     height: 50px;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 15px;
     border: white solid 1px;
     color: #666362;
+    font-size: 2rem;
+    padding-left: 10px;
 }
 
 .line-2 {
@@ -82,10 +83,10 @@ section {
     width: 400px;
     height: 100px;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 15px;
     border: white solid 1px;
     color: white;
+    font-size: 4rem;
+    padding-left: 10px;
 }
 
 .line-3 {
@@ -93,10 +94,10 @@ section {
     width: 400px;
     height: 100px;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 15px;
     border: white solid 1px;
     color: white;
+    font-size: 4rem;
+    padding-left: 10px;
 }
 
 .contact-btn {
@@ -112,22 +113,24 @@ section {
 }
 
 .container-2 {
-    padding-top: 130px;
-    padding-bottom: 170px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     border: white solid 1px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items:center; 
     background-color: #1E1C1C; 
 }
 
 .about {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    gap: 20px;
 }
 
 .about1 {
@@ -138,8 +141,8 @@ section {
 
 .about2 {
     display: flex;
-    padding-top: 50px;
-    padding-left: 100px;
+    justify-content: center;
+    align-items: center;
     gap: 100px;
 }
 
@@ -152,6 +155,7 @@ section {
     margin-bottom: 10px;
     color: #FF4545;
     font-size: 2rem;
+    font-weight: bolder;
 }
 
 .profile {
@@ -186,15 +190,68 @@ section {
 .name,
 .phone,
 .country,
-.email,
-.education {
+.email {
     border: white solid 1px;
-    height: 40px;
+    height: 60px;
     width: 200px;
-    text-align: center;
     padding-top: 7px;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
 }
+
+.education {
+    height: 60px;
+    width: 300px;
+    padding-top: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: white solid 1px;
+    gap: 2px;
+}
+
+.name-lbl,
+.phone-lbl,
+.country-lbl,
+.email-lbl,
+.education-lbl {
+    border: white solid 1px;
+    width: 180px;
+    text-align: center;
+    color:white;
+
+}
+
+.education-lbl {
+    border: white solid 1px;
+    width: 280px;
+    text-align: center;
+    color:white;
+
+}
+
+.name-info,
+.phone-info,
+.country-info,
+.email-info,
+.education-info {
+    border: white solid 1px;
+    width: 180px;
+    height: 20px;
+
+}
+
+.education-info {
+    border: white solid 1px;
+    width: 280px;
+    height: 20px;
+
+}
+
+
+
 
 .p-info1 {
     display: flex;
@@ -211,7 +268,8 @@ section {
 .p-info3 {
     display: flex;
     margin-top: 10px;
-    padding-left: 120px;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-media {
@@ -240,30 +298,35 @@ section {
 }
 
 .container-3 {
-    padding-top: 100px;
-    padding-bottom: 130px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    border: black solid 1px;
+    border: white solid 1px;
     display: flex;
     flex-direction: column;
     align-items:center;  
+    background-color: #303830;
 }
 
 .skills {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .skills-label {
     width: 200px;
     height: 50px;
     text-align: center;
-    padding-left: 20px;
-    padding-top: 15px;
-    border: black solid 1px;
+    padding-top: 5px;
+    border: white solid 1px;
+    margin-bottom: 10px;
+    color: #FF4545;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .skills-part1 {
@@ -273,14 +336,16 @@ section {
 }
 
 .skills-part2 {
-    padding-left: 100px;
     display: flex;
-    gap:100px;
-    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
 }
 
 .skills-part3 {
-    padding-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill1,
@@ -291,7 +356,7 @@ section {
 .skill6,
 .skill7,
 .skill8 {
-    border: black solid 1px;
+    border: white solid 1px;
     height: 100px;
     width: 450px;
     text-align: left;
@@ -300,22 +365,26 @@ section {
     padding-left: 10px;
     padding-top: 7px;
     margin-top: 10px;
+    color: white;
 }
 
 
 .skill-label {
-    border: black solid 1px;
+    border: white solid 1px;
     padding: 5px;
     width: 100px; 
+    color: #FF4545;
+    font-weight: bold;
 }
 
 
 .skill-percent {
-    border: black solid 1px;
+    border: white solid 1px;
     padding: 2px;
     width: 80px;
     margin-top: 2px;
     margin-left:345px;
+    color: white;
 }
 
 .skill1-bar,
@@ -328,6 +397,7 @@ section {
 .skill8-bar {
     display: flex;
     margin-top: 10px;
+    color: white
 }
 
 
@@ -341,8 +411,9 @@ section {
 .skill8-bar1 {
     width: 250px;
     height: 20px;
-    border: black solid 1px;
+    border: white solid 1px;
     text-align: center;
+    color: white;
 }
 
 .skill1-bar2,
@@ -355,8 +426,9 @@ section {
 .skill8-bar2 {
     width: 175px;
     height: 20px;
-    border: black solid 1px;
+    border: white solid 1px;
     text-align: center;
+    color: white;
 }
 
 
@@ -366,26 +438,29 @@ section {
     text-align: center;
     padding-left: 20px;
     padding-top: 15px;
-    border: black solid 1px;
-    margin-top: 100px;
+    border: white solid 1px;
+    color: white;
+    
 }
 
 .container-4 {
-    padding-top: 100px;
-    padding-bottom: 190px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    border: black solid 1px;
+    border: white solid 1px;
     display: flex;
     flex-direction: column;
-    align-items:center;  
+    align-items:center;
+    background-color: #1E1C1C;   
 }
 
 .portfolio {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    gap: 20px;
 }
 
 .portfolio-part1 {
@@ -398,30 +473,29 @@ section {
     width: 200px;
     height: 50px;
     text-align: center;
-    padding-left: 20px;
-    padding-top: 15px;
-    border: black solid 1px;
+    padding-top: 5px;
+    border: white solid 1px;
+    margin-bottom: 10px;
+    color: #FF4545;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
-.portfolio-part2 {
-    margin-top: 100px;
-}
 
 .portfolio-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px; 
+    gap: 380px; 
 }
 
 .portfolio-btn {
-    border: black solid 1px;
+    border: white solid 1px;
     padding: 10px;
+    color:#FF4545;
 }
 
-.portfolio-part3 {
-    margin-top: 30px;
-}
+
 
 .portfolio-image {
     display: flex;
@@ -431,33 +505,36 @@ section {
 }
 
 .portfolio-img {
-    border: black solid 1px;
+    border: white solid 1px;
     height: 400px;
     width: 400px;
     text-align: center;
     padding: 180px 0;
+    color: white;
 }
 
 .container-5 {
-    padding-top: 100px;
-    padding-bottom: 190px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    border: black solid 1px;
+    border: white solid 1px;
     display: flex;
     flex-direction: column;
     align-items:center;  
+    background-color: #303830;
 }
 
 .services {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    gap: 20px;
 }
 
 .service-logo {
-    border: black solid 1px;
+    border: white solid 1px;
     height: 50px;
     width: 80px;
     margin-left: 85px;
@@ -465,25 +542,29 @@ section {
     margin-bottom: 10px;
     text-align: center;
     padding: 15px;
+    color: #FF4545;
 }
 
 .service-label {
-    border: black solid 1px;
+    border: white solid 1px;
     height: 30px;
     width: 100px;
     margin-left: 75px;
     margin-bottom: 10px;
     padding: 5px;
     text-align: center;
+    color:  white;
+    font-weight: bold;
 }
 
 .service-par {
-    border: black solid 1px;
+    border: white solid 1px;
     height: 120px;
     width: 230px;
     margin: 0 10px;
     text-align: center;
     padding: 40px;
+    color: white;
 }
 
 .services-part1 {
@@ -497,19 +578,22 @@ section {
     width: 200px;
     height: 50px;
     text-align: center;
-    padding-left: 20px;
-    padding-top: 15px;
-    border: black solid 1px;
+    padding-top: 5px;
+    border: white solid 1px;
+    margin-bottom: 10px;
+    color: #FF4545;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .services-1st-column {
-    margin-top: 100px;
     display: flex;
+    align-items: center;
+    align-items: center;
     gap: 20px;
 }
 
 .services-2nd-column {
-    margin-top: 50px;
     display: flex;
     gap: 20px;
     
@@ -520,6 +604,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .service1,
@@ -530,29 +615,40 @@ section {
 .service6,
 .service7,
 .service8 {
-    border: black solid 1px;
+    border: white solid 1px;
     width: 250px;
     height: 250px;
 }
 
 .container-6 {
-    height: 100%;
     width: 100%;
-    border: black solid 1px;
+    border: white solid 1px;
     display: flex;
     flex-direction: column;
     align-items:center; 
-    padding-top: 50px; 
-    padding-bottom: 50px ;
+    background-color: #1E1C1C; 
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    gap: 20px;
 }
 
 .contact-me-label {
     width: 200px;
     height: 50px;
     text-align: center;
-    padding-left: 10px;
-    padding-top: 15px;
-    border: black solid 1px;
+    padding-top: 5px;
+    border: white solid 1px;
+    margin-bottom: 10px;
+    color: #FF4545;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .contact-me-part1 {
@@ -577,7 +673,7 @@ section {
 .visit {
     width: 300px;
     height: 70px;
-    border: black solid 1px;
+    border: white solid 1px;
     display: flex;
     padding: 10px;
     gap: 10px;
@@ -594,15 +690,21 @@ section {
 .contact-logo {
     width: 50px;
     height: 50px;
-    border: black solid 1px;
+    border: white solid 1px;
+    color: #FF4545;
+    font-weight: bold;
 }
 
 .contact-label,
 .contact-info {
     width: 220px;
     height: 50px;
-    border: black solid 1px;
+    border: white solid 1px;
+    color:  white;
     
+}
+.contact-label{
+    font-weight: bold;
 }
 
 .send-message-btn {
@@ -610,6 +712,9 @@ section {
     height: 50px;
     text-align: center;
     padding-top: 15px;
-    border: black solid 1px; 
+    border: #FF4545 solid 1px;
+    font-weight: bold;
+    color: white; 
+    background-color: #FF4545;
 }
 
