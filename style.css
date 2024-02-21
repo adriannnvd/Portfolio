@@ -122,6 +122,7 @@ section {
     color: white;
     font-size: 4rem;
     padding-left: 10px;
+    font-weight: bolder;
 }
 
 .line-3 {
@@ -132,6 +133,7 @@ section {
     color: white;
     font-size: 4rem;
     padding-left: 10px;
+    font-weight: bolder;
 }
 
 h1 .period {
@@ -552,8 +554,11 @@ h1 .about-me {
 .projects-img {
     height: 400px;
     width: 300px;
-    text-align: center;
-    object-fit: cover;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
 }
 
 .projects-img img {
@@ -562,10 +567,9 @@ h1 .about-me {
 
 .projects-img img:hover {
     box-shadow:0px 0px 10px 10px #FF4545;
-    height: 410px;
-    width: 300px;
+    transform: scale(1.05);
+    transition: 0.5s;
     text-align: center;
-    object-fit: cover;
 }
 
 .container-4 {
@@ -642,7 +646,7 @@ h1 .about-me {
     display: flex;
     align-items: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 
