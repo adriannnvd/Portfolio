@@ -11,7 +11,8 @@ html {
 
 h1 {
     font-size: 40px;
-    color: #FF4545
+    color: #FF4545;
+
 }
 h1 span {
     font-size: 100px;
@@ -49,6 +50,7 @@ h3 {
     position: fixed;
     background-color: #1E1C1C;
     overflow: auto;
+    z-index: 1;
 }
 
 .logo {
@@ -186,6 +188,7 @@ h1 .about-me {
     color: #FF4545;
     font-size: 2rem;
     font-weight: bolder;
+
 }
 .about1 {
     display: flex;
@@ -209,6 +212,25 @@ h1 .about-me {
 
 .profile img {
     border-radius: 30px;
+}
+
+.about-me {
+    height: 70px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/about_bg.png);
+    background-size: 250px 70px;
+}
+
+
+
+.about-me h1 {
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    padding: 1rem;
 }
 
 .about-me_line1 {
@@ -362,11 +384,21 @@ h1 .about-me {
 }
 
 .skills-label {
-    width: 200px;
-    height: 50px;
+    height: 70px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/skills_bg.png);
+    background-size: 250px 70px;
+
+}
+
+.skills-label h1 {
     text-align: center;
-    margin-bottom: 10px;
-    color: #FF4545;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    padding: 1rem;
 }
 
 .skills-part1 {
@@ -484,12 +516,23 @@ h1 .about-me {
     justify-content: center ;
     gap: 20px;
 }
+
 .projects-label {
-    width: 200px;
-    height: 50px;
-    text-align: center;
+    height: 70px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/projects_bg.png);
+    background-size: 250px 70px;
 }
 
+.projects-label h1 {
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    padding: 1rem;
+}
 
 .projects-buttons {
     display: flex;
@@ -497,9 +540,6 @@ h1 .about-me {
     align-items: center;
     gap: 380px; 
 }
-
-
-
 
 
 .projects-image {
@@ -518,7 +558,14 @@ h1 .about-me {
 
 .projects-img img {
     border-radius: 30px;
-    box-shadow: 10px 10px 5px #FF4545;
+}
+
+.projects-img img:hover {
+    box-shadow:0px 0px 10px 10px #FF4545;
+    height: 410px;
+    width: 300px;
+    text-align: center;
+    object-fit: cover;
 }
 
 .container-4 {
@@ -540,6 +587,23 @@ h1 .about-me {
     gap: 120px;
 }
 
+.services-label {
+    height: 70px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/services_bg.png);
+    background-size: 260px 70px;
+}
+
+.services-label h1 {
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    padding: 1rem;
+}
+
 .service-logo  i{
     font-size: 60px;
     color: #FF4545;   
@@ -559,10 +623,13 @@ h1 .about-me {
 .service-par {
     height: 120px;
     width: 230px;
-    margin: 0 10px;
+    padding: 10px;
     text-align: center;
-    padding: 40px;
     color: white;
+}
+
+.service-par p {
+    font-size: smaller
 }
 
 .services-part1 {
@@ -629,7 +696,7 @@ h1 .about-me {
     display: flex;
     flex-direction: column;
     align-items:center; 
-    background-color: #1E1C1C; 
+    background-color: #FF4545; 
 }
 
 .contact-me {
@@ -642,13 +709,13 @@ h1 .about-me {
     gap: 20px;
 }
 
-.contact-me-label {
+.contact-me-label h1 {
     width: 300px;
     height: 50px;
     text-align: center;
     padding-top: 5px;
     margin-bottom: 10px;
-    color: #FF4545;
+    color: white;
     font-size: 2rem;
     font-weight: bolder;
 }
@@ -704,7 +771,7 @@ h1 .about-me {
 }
 
 .contact-info a {
-    color: #FF4545;
+    color: white;
     text-decoration: none;
 }
 
