@@ -152,6 +152,10 @@ h1 .period {
     border-radius: 12px;
 }
 
+.contact-btn:hover {
+    border: #FF4545 solid 1px;
+    background-color: #303830;
+}
 
 .container-2 {
     height: 100vh;
@@ -330,6 +334,7 @@ h1 .about-me {
 }
 
 .socmed-git,
+.socmed-linkedIn,
 .socmed-fb,
 .socmed-x,
 .socmed-ig {
@@ -372,113 +377,73 @@ h1 .about-me {
 
 .skills-part2 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:50px;
+    color: white;
 }
 
-.skills-part3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.progress-bar-container:not(:last-child) {
+    margin-bottom: 40px;
 }
 
-.skill1,
-.skill2,
-.skill3,
-.skill4,
-.skill5,
-.skill6,
-.skill7,
-.skill8 {
-    border: white solid 1px;
-    height: 100px;
-    width: 450px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-top: 7px;
+.progress-bar-container h2 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.progress-bar {
+    width: 800px;
+    height: 5px;
     margin-top: 10px;
-    color: white;
+    border: 1px solid #303830;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #FF4545;
 }
 
-
-.skill-label {
-    border: white solid 1px;
-    padding: 5px;
-    width: 100px; 
-    color: #FF4545;
-    font-weight: bold;
+.percentage {
+    display: block;
+    height: 100%;
+    background-color: #FF4545;
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
 }
 
-
-.skill-percent {
-    border: white solid 1px;
-    padding: 2px;
-    width: 80px;
-    margin-top: 2px;
-    margin-left:345px;
-    color: white;
+.python {
+    width: 25%;
 }
 
-.skill1-bar,
-.skill2-bar,
-.skill3-bar,
-.skill4-bar,
-.skill5-bar,
-.skill6-bar,
-.skill7-bar,
-.skill8-bar {
+.java {
+    width: 30%;
+}
+
+.c {
+    width: 20%;
+}
+
+.html {
+    width: 25%;
+}
+
+.css {
+    width: 15%;
+}
+
+.progress-bar-lbl {
     display: flex;
-    margin-top: 10px;
-    color: white
+    justify-content: space-between;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
 }
 
 
-.skill1-bar1,
-.skill2-bar1,
-.skill3-bar1,
-.skill4-bar1,
-.skill5-bar1,
-.skill6-bar1,
-.skill7-bar1,
-.skill8-bar1 {
-    width: 250px;
-    height: 20px;
-    border: white solid 1px;
-    text-align: center;
-    color: white;
-}
-
-.skill1-bar2,
-.skill2-bar2,
-.skill3-bar2,
-.skill4-bar2,
-.skill5-bar2,
-.skill6-bar2,
-.skill7-bar2,
-.skill8-bar2 {
-    width: 175px;
-    height: 20px;
-    border: white solid 1px;
-    text-align: center;
-    color: white;
-}
-
-
-.skills-line1 {
-    width: 600px;
-    height: 50px;
-    text-align: center;
-    padding-left: 20px;
-    padding-top: 15px;
-    border: white solid 1px;
-    color: white;
-    
-}
-
-.container-4 {
+.container-5 {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -556,7 +521,7 @@ h1 .about-me {
     box-shadow: 10px 10px 5px #FF4545;
 }
 
-.container-5 {
+.container-4 {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -572,35 +537,26 @@ h1 .about-me {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    gap: 20px;
+    gap: 120px;
+}
+
+.service-logo  i{
+    font-size: 60px;
+    color: #FF4545;   
 }
 
 .service-logo {
-    border: white solid 1px;
-    height: 50px;
-    width: 80px;
-    margin-left: 85px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
     text-align: center;
-    padding: 15px;
-    color: #FF4545;
 }
 
 .service-label {
-    border: white solid 1px;
-    height: 30px;
-    width: 100px;
-    margin-left: 75px;
-    margin-bottom: 10px;
-    padding: 5px;
-    text-align: center;
     color:  white;
     font-weight: bold;
+    height: 60px;
 }
 
 .service-par {
-    border: white solid 1px;
     height: 120px;
     width: 230px;
     margin: 0 10px;
@@ -615,19 +571,6 @@ h1 .about-me {
     align-items: center;
 }
 
-
-.services-label {
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    padding-top: 5px;
-    border: white solid 1px;
-    margin-bottom: 10px;
-    color: #FF4545;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
 .services-1st-column {
     display: flex;
     align-items: center;
@@ -635,11 +578,6 @@ h1 .about-me {
     gap: 20px;
 }
 
-.services-2nd-column {
-    display: flex;
-    gap: 20px;
-    
-}
 
 .services-part2 {
     display: flex;
@@ -651,16 +589,40 @@ h1 .about-me {
 
 .service1,
 .service2,
-.service3,
-.service4,
-.service5,
-.service6,
-.service7,
-.service8 {
-    border: white solid 1px;
+.service3 {
     width: 250px;
-    height: 250px;
+    height: 350px;
+    background-color: #303830;
+    border-radius: 20   px;
+    box-shadow: 0 0 10px #FF4545;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
+
+.see-here {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #FF4545;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.see-here:hover {
+    border: #FF4545 solid 1px;
+    background-color: #303830;
+}
+.see-here-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 
 .container-6 {
     width: 100%;
