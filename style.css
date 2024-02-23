@@ -100,36 +100,53 @@ section {
     justify-content: center;
 
 }
-
 /*
-.content h1 {
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0;
+.content h1 span:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
 }
 
-.content h1::before {
+.typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.typing-animation::before {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
+    display: inline-block;
+    width: 100%;
     height: 100%;
     background-color: transparent;
-    animation: typing 3s steps(20, end) forwards;
-}  
+    animation: typing 6s steps(50, end);
+}
 
 @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+    from {width: 0}
+    to {width: 100%;}
+}
 
+.period {
+    display: inline-block;
+    width: 0;
+}
 */
+
+.content h1{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s ;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%;}
+}
 
 .line-1 {
     margin: 10px;
@@ -261,9 +278,9 @@ h1 .about-me {
 .about-me h1 {
     text-align: center;
     width: 100%;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     padding: 1rem;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 3px 3px 6px black;
 }
 
 .about-me_content {
@@ -276,6 +293,9 @@ h1 .about-me {
     color: white;
 }
 
+.about-me-line1 h2 {
+    font-size: 1rem;
+}
 .about-me_line1 p {
     font-size: 1rem;
 }
@@ -287,7 +307,6 @@ h1 .about-me {
 .about-me_paragraph {
     height: 200px;
     width: 450px;
-    margin-top: 20px;
     text-align: justify;
     color: white;
     font-weight: bold;
@@ -333,12 +352,17 @@ h1 .about-me {
 
 }
 
-.education-lbl {
-    width: 280px;
+.name-lbl h5,
+.phone-lbl h5,
+.country-lbl h5,
+.email-lbl h5,
+.education-lbl h5 {
+    width: 180px;
     text-align: center;
     color:white;
-
 }
+
+
 
 .name-info,
 .phone-info,
@@ -348,7 +372,8 @@ h1 .about-me {
     width: 180px;
     height: 20px;
     text-align: center;
-    color: white;
+    color: #FF4545;
+    font-size: 1.05rem;
 }
 
 .education-info {
@@ -448,7 +473,7 @@ h1 .about-me {
 .skills-label h1 {
     text-align: center;
     width: 100%;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     padding: 1rem;
     text-shadow: 2px 2px 4px black;
 }
@@ -584,7 +609,7 @@ h1 .about-me {
 .projects-label h1 {
     text-align: center;
     width: 100%;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     padding: 1rem;
     text-shadow: 2px 2px 4px black;
 }
@@ -681,7 +706,7 @@ h1 .about-me {
 .services-label h1 {
     text-align: center;
     width: 100%;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     padding: 1rem;
     text-shadow: 2px 2px 4px black;
 
@@ -701,6 +726,7 @@ h1 .about-me {
     color:  white;
     font-weight: bold;
     height: 60px;
+    padding: 10px;
 }
 
 .service-par {
@@ -866,5 +892,24 @@ h1 .about-me {
 .contact-label{
     font-weight: bold;
 }
+
+.contact-logo i {
+    transition: transform 0.3s ease;
+}
+.contact-logo i:hover {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
 
 
