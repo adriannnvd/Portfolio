@@ -101,6 +101,10 @@ section {
     height: 100vh;
     width: 100%;
     background-color: #303830;
+    background-image: url(images/home-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content {
@@ -126,57 +130,6 @@ section {
     flex-direction: column;
     justify-content: center;
 }
-
-
-
-/* -----ANIMATION 1-------*/
-
-/* .content h1:not(:first-child) {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: typing 3s steps(30, end) infinite;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-
-.content h1:nth-child(3) {
-    animation-delay: 1.5s;
-} */
-
-/* -----ANIMATION 2-------*/
-
-/* .content h1:not(:first-child) {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: typing 4s steps(50, end) infinite;
-}
-
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-    50% {
-        width: 100%;
-    }
-    100% {
-        width: 0;
-        animation-delay: 5s;
-    }
-} 
-
-.content h1:nth-child(3) {
-    animation-delay: 1.5s;
-} */
 
 
 
@@ -235,7 +188,7 @@ section {
 .contact-btn:hover {
     border: #FF4545 solid 1px;
     background-color: #303830;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .container-2 {
@@ -245,7 +198,8 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items:center; 
-    background-color: #1E1C1C; 
+    background-color: #1E1C1C;
+     
 }
 
 .about {
@@ -291,7 +245,7 @@ h1 .about-me {
 
 .profile img {
     border-radius: 60px;
-    box-shadow:0px 0px 5px 5px #FF4545;
+    box-shadow:0px 0px 10px 10px #303830;
     
 }
 
@@ -349,10 +303,9 @@ h1 .about-me {
 
 .about-me_paragraph span {
     color: #FF4545;
-    font-size: 1.5rem;
 }
 
-.name,
+.resume,
 .phone,
 .country,
 .email {
@@ -375,7 +328,7 @@ h1 .about-me {
     gap: 2px;
 }
 
-.name-lbl,
+.resume-lbl,
 .phone-lbl,
 .country-lbl,
 .email-lbl,
@@ -386,7 +339,7 @@ h1 .about-me {
 
 }
 
-.name-lbl h5,
+.resume-lbl h5,
 .phone-lbl h5,
 .country-lbl h5,
 .email-lbl h5,
@@ -396,9 +349,17 @@ h1 .about-me {
     color:white;
 }
 
+.resume-info a{
+    text-decoration: none;
+    color: #FF4545;
+}
 
+.resume-info a:hover {
+    text-decoration: underline;
+    color: white;
+}
 
-.name-info,
+.resume-info,
 .phone-info,
 .country-info,
 .email-info,
@@ -543,6 +504,7 @@ h1 .about-me {
     align-items: center;
     justify-content: center;
     background-color: #1E1C1C;
+    box-shadow: 0 0 5px 5px #666362;
     border-radius: 20px;
     width: 500px;
     height: 200px;
@@ -744,7 +706,7 @@ h1 .about-me {
 }
 
 .projects-content:hover .projects-image {
-    box-shadow:0px 0px 10px 10px #FF4545;
+    box-shadow:0px 0px 10px 10px #1E1C1C;
     transform: scale(1.05);
     opacity: 0.3;
 }
@@ -869,7 +831,7 @@ h1 .about-me {
     height: 350px;
     background-color: #303830;
     border-radius: 20px;
-    box-shadow: 0 0 20px #FF4545;
+    box-shadow: 0 0 20px #666362;
     text-align: center;
     display: flex;
     flex-direction: column;
