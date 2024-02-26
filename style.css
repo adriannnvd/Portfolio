@@ -58,6 +58,15 @@ h3 {
     color: #FF4545;
 }
 
+.logo .letter {
+    display: inline-block;
+    transition: color 0.5s ease-in-out;
+}
+
+.logo .letter.color-change {
+    color: white; 
+}
+
 .nav-buttons {
     display: flex;
     gap:2rem;
@@ -100,53 +109,69 @@ section {
     justify-content: center;
 
 }
-/*
-.content h1 span:nth-of-type(2) {
-    margin-bottom: 30px;
-    animation: slideTop 1s ease forwards;
-    animation-delay: .7s;
+
+/* 
+.content2{
+    width: 600px;
 }
 
-.typing-animation {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-}
+.content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
 
-.typing-animation::before {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    animation: typing 6s steps(50, end);
-}
 
-@keyframes typing {
-    from {width: 0}
-    to {width: 100%;}
-}
 
-.period {
-    display: inline-block;
-    width: 0;
-}
-*/
+/* -----ANIMATION 1-------*/
 
-.content h1{
+.content h1:not(:first-child) {
     overflow: hidden;
     white-space: nowrap;
     width: 0;
-    animation: typing;
-    animation-duration: 1.5s ;
-    animation-timing-function: steps(30, end);
-    animation-fill-mode: forwards;
+    animation: typing 3s steps(30, end) infinite;
 }
 
 @keyframes typing {
-    from {width: 0}
-    to {width: 100%;}
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
+
+
+.content h1:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+/* -----ANIMATION 2-------*/
+
+/* .content h1:not(:first-child) {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(20, end) infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+} 
+
+.content h1:nth-child(3) {
+    animation-delay: 1.5s;
+}*/
+
+
 
 .line-1 {
     margin: 10px;
@@ -267,10 +292,10 @@ h1 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/about_bg.png);
+    /* background-image: url(images/about_bg.png);
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat ; */
 }
 
 
@@ -447,7 +472,7 @@ h1 .about-me {
     background-color: #303830;
 }
 
-.skills {
+.experiences {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -457,20 +482,20 @@ h1 .about-me {
     height: 100vh;
 }
 
-.skills-label {
+.experiences-label {
     height: 70px;
     width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/skills_bg.png);
+    /* background-image: url(images/skills_bg.png);
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat ; */
 
 }
 
-.skills-label h1 {
+.experiences-label h1 {
     text-align: center;
     width: 100%;
     backdrop-filter: blur(6px);
@@ -478,77 +503,109 @@ h1 .about-me {
     text-shadow: 2px 2px 4px black;
 }
 
-.skills-part1 {
+.experiences-part1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.skills-part2 {
+.experiences-part2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:50px;
     color: white;
+
 }
 
-.progress-bar-container:not(:last-child) {
-    margin-bottom: 40px;
-}
-
-.progress-bar-container h2 {
-    color: white;
-    letter-spacing: 1px;
-    font-size: 20px;
-}
-
-.progress-bar {
-    width: 800px;
-    height: 5px;
-    margin-top: 10px;
-    border: 1px solid #303830;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FF4545;
-}
-
-.percentage {
-    display: block;
-    height: 100%;
-    background-color: #FF4545;
-    border-radius: 5px;
-    animation: progress 1500ms ease-in 1;
-}
-
-.python {
-    width: 25%;
-}
-
-.java {
-    width: 30%;
-}
-
-.c {
-    width: 20%;
-}
-
-.html {
-    width: 25%;
-}
-
-.css {
-    width: 15%;
-}
-
-.progress-bar-lbl {
+.exp-column1,
+.exp-column2 {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
-@keyframes progress {
-    from {
-        width: 0;
-    }
+.programming-languages,
+.IDE,
+.database,
+.web-technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E1C1C;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    gap: 20px;
+}
+
+.pl-items {
+    display: flex;
+    gap:20px;
+}
+
+.pl-item {
+    width: 75px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+}
+
+.pl-item:hover,
+.ide-item:hover,
+.database-item:hover,
+.web-tech-item:hover{
+    transform: scale(1.2);
+    color: #FF4545;
+}
+
+.ide-items {
+    display: flex;
+    gap:20px;
+}
+
+.ide-item {
+    width: 75px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:5px;
+}
+
+
+.database-items {
+    display: flex;
+    gap:20px;
+}
+
+.database-item {
+    width: 75px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:5px;
+}
+
+.web-tech-items {
+    display: flex;
+    gap:20px;
+}
+
+.web-tech-item {
+    width: 75px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:5px;
 }
 
 
@@ -600,10 +657,10 @@ h1 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/projects_bg.png);
+    /* background-image: url(images/projects_bg.png);
     background-size: 250px 70px;
     background-position: center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat ; */
 }
 
 .projects-label h1 {
@@ -697,10 +754,10 @@ h1 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/services_bg.png);
+    /* background-image: url(images/services_bg.png);
     background-size: 260px 70px;
     background-position: center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat ; */
 }
 
 .services-label h1 {
@@ -751,7 +808,7 @@ h1 .about-me {
     display: flex;
     align-items: center;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 
