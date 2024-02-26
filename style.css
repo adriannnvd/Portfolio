@@ -85,6 +85,9 @@ h3 {
     
 }
 
+.nav-button.active {
+    color: #FF4545;
+  }
 
 
 section {
@@ -681,15 +684,19 @@ h1 .about-me {
 
 
 .projects-content {
-    height: 400px;
     width: 300px;
     object-fit: contain;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center ;
     color: white;
     border-radius: 30px;
     position: relative;
+    gap: 10px;
+}
+.content-icon img:hover {
+    transform: scale(1.1);
 }
 
 .projects-content p,
@@ -835,6 +842,11 @@ h1 .about-me {
     gap: 10px;
 }
 
+.service1:hover,
+.service2:hover,
+.service3:hover{
+    transform: scale(1.025);
+}
 .see-here {
     height: 30px;
     width: 150px;
@@ -945,6 +957,7 @@ h1 .about-me {
 .contact-info a:hover {
 
     text-decoration: underline;
+    color: #303830;
 }
 .contact-label{
     font-weight: bold;

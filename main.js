@@ -9,3 +9,21 @@ function toggleColorChange() {
 }
 
 setInterval(toggleColorChange, 2000);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navButtons = document.querySelectorAll('.nav-button');
+  
+    navButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Remove 'active' class from all buttons
+        navButtons.forEach(function(btn) {
+          btn.classList.remove('active');
+        });
+  
+        // Add 'active' class to the clicked button
+        this.classList.add('active');
+      });
+    });
+  });
+  
