@@ -97,3 +97,24 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " btn-active";
   });
 }       
+
+// function goProjectOne() {
+//     document.querySelector(".see-here-btn app-dev").addEventListener('click',function(){
+//         document.getElementById('projects').scrollIntoView({behavior: "smooth"});
+
+//     });
+// }
+
+// function goProjectTwo() {
+//     document.querySelector(".see-here-btn website-dev").addEventListener('click',function(){
+//         document.getElementById('projects').scrollIntoView({behavior: "smooth"});
+        
+//     });
+// }
+
+// function goProjectThree() {
+//     document.querySelector(".see-here-btn ui-ux").addEventListener('click',function(){
+//         document.getElementById('projects').scrollIntoView({behavior: "smooth"});
+        
+//     });
+// }
