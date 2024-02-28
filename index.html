@@ -21,7 +21,7 @@
                     <span class="letter">I</span>
                     <span class="letter">O</span>
                 </div>>
-                <div class="nav-buttons">
+                <div class="nav-buttons" id="nav-buttons">
                     <a href=#home class="nav-button active" >HOME</a>
                     <a href=#about class="nav-button">ABOUT ME</a>
                     <a href=#experiences class="nav-button">EXPERIENCES</a>
@@ -31,46 +31,7 @@
                 </div>
             </header> 
             
-            <!-- <section>
-                <div class="container-1" id="home">
-                    <div class="content">
-                        <h1>HI, I'M A</h1>
-                        <h1 class="typing">SOFTWARE DEVELOPER<span class="period">.</span></h1>
-                        <a href="#contact" class="contact-btn">CONTACT ME!</a>
-                    </div>
-                </div>
-            </section> -->
-      
-            <!-- <section>
-                <div class="container-1" id="home">
-                    <div class="content">
-                        <h1>HI, I'M A</h2>
-                        <h1 class="typing">
-                            <span class="letter">S</span>
-                            <span class="letter">O</span>
-                            <span class="letter">F</span>
-                            <span class="letter">T</span>
-                            <span class="letter">W</span>
-                            <span class="letter">A</span>
-                            <span class="letter">R</span>
-                            <span class="letter">E</span>
-                        </h1>
-                        <h1 class="typing">
-                            <span class="letter">D</span>
-                            <span class="letter">E</span>
-                            <span class="letter">V</span>
-                            <span class="letter">E</span>
-                            <span class="letter">E</span>
-                            <span class="letter">L</span>
-                            <span class="letter">O</span>
-                            <span class="letter">P</span>
-                            <span class="letter">E</span>
-                            <span class="letter">R</span>
-                            <span class="period">.</span></h1>
-                        <a href=#contact class="contact-btn" >CONTACT ME!</a>
-                    </div>
-                </div>
-            </section> -->
+            
             <section>
                 <div class="container-1" id="home">
                     <div class="content">
@@ -306,7 +267,7 @@
                                         a success together.
                                     </p></div>
                                 <div class="see-here">
-                                    <a href=#projects class="see-here-btn" >See Here>></a>
+                                    <a href=#projects class="see-here-btn app-dev" >See Here>></a>
                                 </div>
                             </div>
                             <div class="service2">
@@ -314,7 +275,7 @@
                                     <i class="large material-icons">laptop_mac</i>
                                 </div>
                                 <div class="service-label">
-                                    <h2>MOBILE DEVELOPMENT</h2>
+                                    <h2>WEBSITE DEVELOPMENT</h2>
                                 </div>
                                 <div class="service-par">
                                     <p>Discover web solutions tailored just for you! I design and develop clean,
@@ -322,7 +283,7 @@
                                         that speaks to your audience and boosts your business.
                                     </p></div>
                                 <div class="see-here">
-                                    <a href=#projects class="see-here-btn" >See Here>></a>
+                                    <a href=#projects class="see-here-btn website-dev" >See Here>></a>
                                 </div>
                             </div>
                             <div class="service3">
@@ -338,7 +299,7 @@
                                         let's make your digital experiences stand out.
                                     </p></div>
                                 <div class="see-here">
-                                    <a href=#projects class="see-here-btn" >See Here>></a>
+                                    <a href=#projects class="see-here-btn ui-ux" >See Here>></a>
                                 </div>
                             </div>
                         </div>
@@ -354,12 +315,19 @@
                         <div class="projects-label">
                             <h1>PROJECTS</h1>
                         </div>
-                    </div>
+                    </div> 
                     <div class="projects-part2">
-                        <div class="project1">
-                            <div class="projects-btn">
-                                <h3>MOBILE APPLICATION</h3></div>
-                            <div class="projects-content">
+
+                            <div class="projects-buttons" id="projects-buttons">
+                                <ul>
+                                    <li class="projects-btn projectOne btn-active" onclick="showProjectOne()">MOBILE APPLICATION</li>
+                                    <li class="projects-btn projectTwo" onclick="showProjectTwo()">WEBSITE</li>
+                                    <li class="projects-btn projectThree" onclick="showProjectThree()">UI/UX</li> 
+                                </ul>
+                            </div>
+
+                        <div class="project1">   
+                            <div class="projects-content" id="project1">
                                 <div class="content-info">
                                     <img class="projects-image" src="images/app-development.png" alt="MOBILE APPLICATION IMAGE" width="300" height="400">
                                     <div class="projects-data">
@@ -370,22 +338,20 @@
                                                 and eliminate wasteful spending habits in their financial life.
                                             </p>
                                         </div>
-                                        
                                     </div>
                                 </div>
                                 <div class="content-icon">
-                                    <img src="images/java-logo.png" alt="java" width="40px" height="40px">
-                                    <img src="images/android-studio-logo.png" alt="android-studio" width="40px" height="40px">
-                                    <img src="images/firebase-logo.png" alt="firebase" width="40px" height="40px">
+                                    <img class="content-icon1" src="images/java-logo.png"  width="40px" height="40px">
+                                    <img class="content-icon2" src="images/android-studio-logo.png"  width="40px" height="40px">
+                                    <img class="content-icon3" src="images/firebase-logo.png"  width="40px" height="40px">
                                 </div>
                             </div>
                         </div>
-                        <div class="project2">
-                            <div class="projects-btn">
-                                <h3>WEBSITE</h3></div>
-                            <div class="projects-content">
+                        <!-- <div class="project2">
+                            
+                            <div class="projects-content" id="project2">
                                 <div class="content-info">
-                                    <img class="projects-image" src="images/website_img.png" alt="MOBILE APPLICATION IMAGE" width="300" height="400">
+                                    <img class="projects-image" src="images/website_img.png" alt="WEBSITE IMAGE" width="300" height="400">
                                     <div class="projects-data">
                                         <div class="proj-data-content">
                                             <h4 class="project-title">TITLE</h4>
@@ -403,12 +369,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project2">
-                            <div class="projects-btn">
-                                <h3>UI/UX</h3></div>
-                            <div class="projects-content">
+                        <div class="project3">
+                            
+                            <div class="projects-content" id="project3">
                                 <div class="content-info">
-                                    <img class="projects-image" src="images/ui-ux-img.png" alt="MOBILE APPLICATION IMAGE" width="300" height="400">
+                                    <img class="projects-image" src="i.png" alt="UI/UX IMAGE" width="300" height="400">
                                     <div class="projects-data">
                                         <div class="proj-data-content">
                                             <h4 class="project-title">TITLE</h4>
@@ -424,7 +389,8 @@
                                     <img src="" alt="" width="40px" height="40px">
                                     <img src="" alt="" width="40px" height="40px">
                                 </div>
-                        </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

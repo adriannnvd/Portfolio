@@ -11,67 +11,20 @@ function toggleColorChange() {
 
 setInterval(toggleColorChange, 2000);
 
-//CHANGE COLORS IN NAV-BUTTON
-// document.addEventListener("DOMContentLoaded", function() {
-//     const navButtons = document.querySelectorAll('.nav-button');
-  
-//     navButtons.forEach(function(button) {
-//       button.addEventListener('click', function() {
-        
-//         navButtons.forEach(function(btn) {
-//           btn.classList.remove('active');
-//         });
-  
-        
-//         this.classList.add('active');
-//       });
-//     });
-//   });
-  
-document.addEventListener("DOMContentLoaded", function() {
-    const navButtons = document.querySelectorAll('.nav-button');
-    const sections = document.querySelectorAll('section'); // assuming each section has an id matching the href of the corresponding nav button
-    
-    // Function to check which section is in view
-    function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-    
-    // Function to update active class based on scroll position
-    function updateActiveButton() {
-        sections.forEach(function(section, index) {
-            if (isInViewport(section)) {
-                navButtons.forEach(function(btn) {
-                    btn.classList.remove('active');
-                });
-                navButtons[index].classList.add('active');
-            }
-        });
-    }
-    
-    // Add event listeners for click on nav buttons
-    navButtons.forEach(function(button, index) {
-        button.addEventListener('click', function() {
-            navButtons.forEach(function(btn) {
-                btn.classList.remove('active');
-            });
-            this.classList.add('active');
-            sections[index].scrollIntoView({ behavior: "smooth" }); // Scroll to the corresponding section
-        });
-    });
-    
-    // Add event listener for scroll to update active button
-    window.addEventListener('scroll', updateActiveButton);
-    
-    // Update active button on page load
-    updateActiveButton();
-});
+
+//CHANGING THE ACTIVE BUTTON FOR NAV-BAR
+var btnContainer = document.getElementById("nav-buttons");
+
+var btns = btnContainer.getElementsByClassName("nav-button");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+
+    this.className += " active";
+  });
+}
 
 
 //TYPING ANIMATION TO SOTWARE DEVELOPER
@@ -101,3 +54,46 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
+//CHANGING THE CONTENTS IN PROJECTS
+    function showProjectOne() {
+        document.querySelector(".projects-image").setAttribute('src',"images/app-development.png");
+        document.querySelector('.project-title').textContent = "SPENDEEFY";
+        document.querySelector(".project-description").textContent = "A mobile application that helps the user to identify and eliminate wasteful spending habits in their financial life.";
+
+        document.querySelector(".content-icon1").setAttribute('src',"images/java-logo.png");
+        document.querySelector(".content-icon2").setAttribute('src',"images/android-studio-logo.png");
+        document.querySelector(".content-icon3").setAttribute('src',"images/firebase-logo.png");
+    }
+    function showProjectTwo() {
+        document.querySelector(".projects-image").setAttribute('src',"images/website_img.png");
+        document.querySelector('.project-title').textContent = "TITLE";
+        document.querySelector(".project-description").textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
+        document.querySelector(".content-icon1").setAttribute('src',"");
+        document.querySelector(".content-icon2").setAttribute('src',"");
+        document.querySelector(".content-icon3").setAttribute('src',"");
+    }
+
+    function showProjectThree() {
+        document.querySelector(".projects-image").setAttribute('src',"images/ui-ux-img.png");
+        document.querySelector('.project-title').textContent = "TITLE";
+        document.querySelector(".project-description").textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
+        document.querySelector(".content-icon1").setAttribute('src',"");
+        document.querySelector(".content-icon2").setAttribute('src',"");
+        document.querySelector(".content-icon3").setAttribute('src',"");
+    }
+        
+ //CHANGING THE ACTIVE BUTTON FOR PROJECTS BUTTONS
+var btnContainer = document.getElementById("projects-buttons");
+
+var btns = btnContainer.getElementsByClassName("projects-btn");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("btn-active");
+    current[0].className = current[0].className.replace(" btn-active", "");
+
+    this.className += " btn-active";
+  });
+}       
