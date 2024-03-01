@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">                                                                                                                                                                                      
 <body>
+    <div class="custom-cursor"></div>
     <div class="container">
             <header class="navbar">
                 <div class="logo">
@@ -60,7 +61,7 @@
                     <div class="about2">
                         <div class="about-me_profile">
                             <div class="profile">
-                                <img src="images/profile.jpg" alt="Profile" width="450" height="520">
+                                <!-- <img class="profile-img" src="images/profile.jpg" alt="Profile" width="450" height="520"> -->
                             </div>
                         </div>
                         <div class="about-me_content">
@@ -69,7 +70,7 @@
                             </div>
                             <div class="about-me_paragraph">
                                 <p> I am a dedicated <span>Software Developer</span> with a passion for
-                                    crearing efficient and elegant solutions to complex problems.
+                                    creating efficient and elegant solutions to complex problems.
                                     With a strong foundation in programming languages such as <span>Java,
                                     Python and C++</span>, can also create robust and scalable appliactions.
                                     My commitment to continuous learning and staying updated on insdustry
@@ -205,10 +206,6 @@
                                 </div>
                                 <div class="database-items">
                                     <div class="database-item">
-                                        <img src="images/mysql-logo.png" alt="MYSQL" width="70px" height="70px">
-                                        <h4>MYSQL</h4>
-                                    </div>
-                                    <div class="database-item">
                                         <img src="images/firebase-logo.png" alt="FIREBASE" width="70px" height="70px">
                                         <h4>FIREBASE</h4>
                                     </div>
@@ -220,21 +217,18 @@
                             </div>
                             <div class="web-tech-items">
                                 <div class="web-tech-item">
-                                    <img src="images/phpmyadmin-logo.png" alt="PHPMYADMIN" width="85px" height="70px">
-                                    <h4>PHPMYADMIN</h4>
-                                </div>
-                                <div class="web-tech-item">
                                     <img src="images/html-logo.png" alt="HTML" width="70px" height="70px">
                                     <h4>HTML</h4>
-                                </div>
-                                <div class="web-tech-item">
-                                    <img src="images/css-logo.png" alt="CSS" width="70px" height="70px">
-                                    <h4>CSS</h4>
                                 </div>
                                 <div class="web-tech-item">
                                     <img src="images/javascript-logo.png" alt="JAVASCRIPT" width="70px" height="70px">
                                     <h4>JAVASCRIPT</h4>
                                 </div>
+                                <div class="web-tech-item">
+                                    <img src="images/css-logo.png" alt="CSS" width="70px" height="70px">
+                                    <h4>CSS</h4>
+                                </div>
+                                
                             </div>
                         </div>
                         </div>  
@@ -267,7 +261,7 @@
                                         a success together.
                                     </p></div>
                                 <div class="see-here">
-                                    <a href="#projects" class="see-here-btn app-dev" onclick="goProjectOne()">See Here>></a>
+                                    <a  class="see-here-btn app-dev" onclick="goProjectOne(); showProjectOne();">See Here>></a>
                                 </div>
                             </div>
                             <div class="service2">
@@ -283,7 +277,7 @@
                                         that speaks to your audience and boosts your business.
                                     </p></div>
                                 <div class="see-here">
-                                    <a href="#projects" class="see-here-btn website-dev" onclick="goProjectTwo()" >See Here>></a>
+                                    <a  class="see-here-btn website-dev" onclick="goProjectTwo(); showProjectTwo()" >See Here>></a>
                                 </div>
                             </div>
                             <div class="service3">
@@ -299,7 +293,7 @@
                                         let's make your digital experiences stand out.
                                     </p></div>
                                 <div class="see-here">
-                                    <a href="#projects" class="see-here-btn ui-ux"  onclick="goProjectThree()" >See Here>></a>
+                                    <a  class="see-here-btn ui-ux"  onclick="goProjectThree(); showProjectThree()" >See Here>></a>
                                 </div>
                             </div>
                         </div>
@@ -347,50 +341,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="project2">
-                            
-                            <div class="projects-content" id="project2">
-                                <div class="content-info">
-                                    <img class="projects-image" src="images/website_img.png" alt="WEBSITE IMAGE" width="300" height="400">
-                                    <div class="projects-data">
-                                        <div class="proj-data-content">
-                                            <h4 class="project-title">TITLE</h4>
-                                            <p class="project-description">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                                magna aliqua. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content-icon">
-                                    <img src="" alt="" width="40px" height="40px">
-                                    <img src="" alt="" width="40px" height="40px">
-                                    <img src="" alt="" width="40px" height="40px">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project3">
-                            
-                            <div class="projects-content" id="project3">
-                                <div class="content-info">
-                                    <img class="projects-image" src="i.png" alt="UI/UX IMAGE" width="300" height="400">
-                                    <div class="projects-data">
-                                        <div class="proj-data-content">
-                                            <h4 class="project-title">TITLE</h4>
-                                            <p class="project-description">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                                magna aliqua. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>  
-                                <div class="content-icon">
-                                    <img src="" alt="" width="40px" height="40px">
-                                    <img src="" alt="" width="40px" height="40px">
-                                    <img src="" alt="" width="40px" height="40px">
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>

@@ -5,6 +5,10 @@
     font-family: "Protest Riot", sans-serif;
 }
 
+body{
+    cursor: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -97,11 +101,20 @@ section {
     width: 100%;
 }
 
+.about-me h1:hover,
+.experiences-label h1:hover,
+.services-label h1:hover,
+.projects-label h1:hover,
+.contact-label h1:hover {
+    transform: scale(1.2);
+}
+
 .container-1 {
     height: 100vh;
     width: 100%;
     background-color: #303830;
-    background-image: url(images/home-bg.png);
+    background-image: url(images/background1.png);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,8 +253,48 @@ h1 .about-me {
 .profile {
     width: 450px;
     height: 500px;
-    color: white;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
 }
+
+.profile::before{
+    content: "";
+    background-image: conic-gradient(
+        #FF4545 20deg, transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.profile::after{
+    content: "";
+    width: 430px;
+    height: 480px;
+    background-image: url(images/profile.jpg);
+    background-size:430px 480px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .profile img {
     border-radius: 60px;
@@ -440,6 +493,11 @@ h1 .about-me {
     flex-direction: column;
     align-items:center;  
     background-color: #303830;
+    background-image: url(images/background2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .experiences {
@@ -769,6 +827,11 @@ h1 .about-me {
     flex-direction: column;
     align-items:center;  
     background-color: #303830;
+    background-image: url(images/background3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .services {
@@ -1007,5 +1070,20 @@ h1 .about-me {
       transform: translateY(-5px);
     }
   }
+
+  .custom-cursor { 
+    position: fixed; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    background-color: #FF4545; 
+    border: 2px solid #FF4545;
+    box-shadow: 0 0 5px 5px #FF4545; 
+    mix-blend-mode: screen; 
+    pointer-events: none; 
+    transform: translate(-50%, -50%); 
+    transition: width 0.2s ease, height 0.2s ease; 
+    z-index: 2;
+}
 
 

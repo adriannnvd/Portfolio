@@ -98,23 +98,57 @@ for (var i = 0; i < btns.length; i++) {
   });
 }       
 
-// function goProjectOne() {
-//     document.querySelector(".see-here-btn app-dev").addEventListener('click',function(){
-//         document.getElementById('projects').scrollIntoView({behavior: "smooth"});
+//GOING TO PROJECT SECTION AFTER CLICKING THE SEE HERE BUTTONS IN SERVICES SECTION
+function goProjectOne() {
+    document.getElementById("projects").scrollIntoView();
+    setActiveProject(1);
+}
 
-//     });
-// }
+function goProjectTwo() {
+    document.getElementById("projects").scrollIntoView();
+    setActiveProject(2);
+}
 
-// function goProjectTwo() {
-//     document.querySelector(".see-here-btn website-dev").addEventListener('click',function(){
-//         document.getElementById('projects').scrollIntoView({behavior: "smooth"});
-        
-//     });
-// }
+function goProjectThree() {
+    document.getElementById("projects").scrollIntoView();
+    setActiveProject(3);
+}
 
-// function goProjectThree() {
-//     document.querySelector(".see-here-btn ui-ux").addEventListener('click',function(){
-//         document.getElementById('projects').scrollIntoView({behavior: "smooth"});
-        
-//     });
-// }
+function setActiveProject(projectNumber) {
+    // Remove 'btn-active' class from all project buttons
+    var projectButtons = document.querySelectorAll('.projects-buttons li');
+    projectButtons.forEach(button => {
+        button.classList.remove('btn-active');
+    });
+
+    // Add 'btn-active' class to the corresponding project button
+    var activeButton = document.querySelector('.projects-buttons .projectOne');
+    if (projectNumber === 2) {
+        activeButton = document.querySelector('.projects-buttons .projectTwo');
+    } else if (projectNumber === 3) {
+        activeButton = document.querySelector('.projects-buttons .projectThree');
+    }
+    activeButton.classList.add('btn-active');
+}
+
+
+//CHANGING THE CURSOR
+const cursor = document.querySelector('.custom-cursor'); 
+ 
+document.addEventListener('mousemove', (e) => { 
+    cursor.style.left = e.clientX + 'px'; 
+    cursor.style.top = e.clientY + 'px'; 
+}); 
+ 
+// Add a hover effect to interactive elements 
+const interactiveElements = document.querySelectorAll('.nav-buttons'); 
+interactiveElements.forEach((element) => { 
+    element.addEventListener('mouseenter', () => { 
+        cursor.style.width = '0px'; 
+        cursor.style.height = '0px'; 
+    }); 
+    element.addEventListener('mouseleave', () => { 
+        cursor.style.width = '20px'; 
+        cursor.style.height = '20px'; 
+    }); 
+}); 
