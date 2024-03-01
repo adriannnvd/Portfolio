@@ -6,7 +6,7 @@
 }
 
 body{
-    cursor: none;
+    /* cursor: none; */
 }
 
 html {
@@ -963,7 +963,7 @@ h1 .about-me {
     display: flex;
     flex-direction: column;
     align-items:center; 
-    background-color: #FF4545; 
+    background-color: #1E1C1C; 
 }
 
 .contact-me {
@@ -982,10 +982,10 @@ h1 .about-me {
     text-align: center;
     padding-top: 5px;
     margin-bottom: 10px;
-    color: white;
+    color: #FF4545;
     font-size: 2rem;
     font-weight: bolder;
-
+    text-shadow: 2px 2px 4px black;
 }
 
 .contact-me-part1 {
@@ -1046,7 +1046,7 @@ h1 .about-me {
 .contact-info a:hover {
 
     text-decoration: underline;
-    color: #303830;
+    color: #FF4545;
 }
 .contact-label{
     font-weight: bold;
@@ -1071,19 +1071,19 @@ h1 .about-me {
     }
   }
 
-  .custom-cursor { 
+  /* .custom-cursor { 
     position: fixed; 
     width: 20px; 
     height: 20px; 
     border-radius: 50%; 
-    background-color: #FF4545; 
-    border: 2px solid #FF4545;
-    box-shadow: 0 0 5px 5px #FF4545; 
+    background-color: #c40c0c; 
+    border: 8px solid #c40c0c;
+    box-shadow: 0 0 5px 5px #c40c0c;
     mix-blend-mode: screen; 
     pointer-events: none; 
     transform: translate(-50%, -50%); 
     transition: width 0.2s ease, height 0.2s ease; 
     z-index: 2;
-}
+} */
 
 

@@ -132,23 +132,23 @@ function setActiveProject(projectNumber) {
 }
 
 
-//CHANGING THE CURSOR
-const cursor = document.querySelector('.custom-cursor'); 
+// //CHANGING THE CURSOR
+// const cursor = document.querySelector('.custom-cursor'); 
  
-document.addEventListener('mousemove', (e) => { 
-    cursor.style.left = e.clientX + 'px'; 
-    cursor.style.top = e.clientY + 'px'; 
-}); 
+// document.addEventListener('mousemove', (e) => { 
+//     cursor.style.left = e.clientX + 'px'; 
+//     cursor.style.top = e.clientY + 'px'; 
+// }); 
  
-// Add a hover effect to interactive elements 
-const interactiveElements = document.querySelectorAll('.nav-buttons'); 
-interactiveElements.forEach((element) => { 
-    element.addEventListener('mouseenter', () => { 
-        cursor.style.width = '0px'; 
-        cursor.style.height = '0px'; 
-    }); 
-    element.addEventListener('mouseleave', () => { 
-        cursor.style.width = '20px'; 
-        cursor.style.height = '20px'; 
-    }); 
-}); 
+// // Add a hover effect to interactive elements 
+// const interactiveElements = document.querySelectorAll('.nav-buttons'); 
+// interactiveElements.forEach((element) => { 
+//     element.addEventListener('mouseenter', () => { 
+//         cursor.style.width = '0'; 
+//         cursor.style.height = '0'; 
+//     }); 
+//     element.addEventListener('mouseleave', () => { 
+//         cursor.style.width = '20px'; 
+//         cursor.style.height = '20px'; 
+//     }); 
+// }); 
